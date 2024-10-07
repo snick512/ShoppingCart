@@ -1,4 +1,4 @@
--- Create database 
+-- Create database
 CREATE DATABASE shopping_cart;
 
 -- Create orders table to store the user’s information and order details
