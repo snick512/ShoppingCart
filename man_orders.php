@@ -2,16 +2,18 @@
 
 include "db.php";
 
+header('Content-Type: application/json; charset=utf-8');
+
 /* Weds Oct 9, 2024 3.03 am
 
 View all orders:
     
-    curl -X GET http://yourdomain.com/manage_orders.php
+    curl -X GET https://teamclapback.com/man_orders.php
 
 
 View specific order: 
 
-    curl -X GET http://yourdomain.com/manage_orders.php?id=1
+    curl -X GET https://teamclapback.com/man_orders.php?id=1
 
 
 Add new order (POST): 
@@ -22,7 +24,7 @@ Add new order (POST):
     "address": "123 Main St",
     "zip": "12345",
     "cart": [{"sku": "prod123"}, {"sku": "prod456"}]
-}' http://yourdomain.com/manage_orders.php
+}' https://teamclapback.com/man_orders.php
 
 
 Update an existing order: 
@@ -33,12 +35,12 @@ Update an existing order:
     "address": "456 New St",
     "zip": "98765",
     "sku": "prod789"
-}' http://yourdomain.com/manage_orders.php?id=1
+}' https://teamclapback.com/man_orders.php?id=1
 
 
 Delete: 
 
-    curl -X DELETE http://yourdomain.com/manage_orders.php?id=1
+    curl -X DELETE https://teamclapback.com/man_orders.php?id=1
 
 
 
